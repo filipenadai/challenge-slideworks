@@ -29,9 +29,7 @@ export const Container = styled.div<ContainerProps>`
     css`
       color: #adbbad;
     `}
-  & + div {
-    margin: 8px 0 0 16px;
-  }
+
   input {
     background: transparent;
     flex: 1;
@@ -41,7 +39,10 @@ export const Container = styled.div<ContainerProps>`
       color: #fdfdfd;
     }
   }
-  svg {
-    margin-right: 16px;
+
+  @media (min-width: 700px) {
+    & + div {
+      margin-left: 16px;
+    }
   }
 `;

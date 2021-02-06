@@ -1,13 +1,20 @@
 import React from 'react';
-import FormPage from './pages/FormPage';
+import { BrowserRouter } from 'react-router-dom';
 
 import GlobalStyle from './styles/global';
 
+import Routes from './routes';
+
+import { ToastProvider } from './hooks/toast';
+
 const App: React.FC = () => (
-  <>
+  <BrowserRouter>
     <GlobalStyle />
-    <FormPage />
-  </>
+
+    <ToastProvider>
+      <Routes />
+    </ToastProvider>
+  </BrowserRouter>
 );
 
 export default App;
