@@ -4,10 +4,15 @@ import CreateCardService from '../services/CreateCardService';
 
 export default class CardController {
   public async create(request: Request, response: Response): Promise<Response> {
+    const { name, email } = request.body;
+
     const createCard = new CreateCardService();
 
-    await createCard.execute({ name: 'a' });
+    await createCard.execute({
+      name,
+      email,
+    });
 
-    return response.json({ ok: true });
+    return response.json({ success: true });
   }
 }

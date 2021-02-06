@@ -25,6 +25,10 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  form {
+    margin-top: 24px;
+  }
 `;
 
 export const InputForm = styled.div`
