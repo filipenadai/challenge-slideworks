@@ -1,0 +1,8 @@
+{
+  "name": "challenge-slideworks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/filipenadai/challenge-slideworks.git",
+  "author": "Filipe Nadai <f.nadai05@gmail.com>",
+  "license": "MIT"
+}
